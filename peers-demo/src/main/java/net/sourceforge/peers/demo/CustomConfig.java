@@ -20,7 +20,7 @@ public class CustomConfig implements Config {
             //inetAddress = InetAddress.getLocalHost();
             // if you have several network interfaces like I do,
             // select the right one after running ipconfig or ifconfig
-            inetAddress = InetAddress.getByName("192.168.1.10");
+            inetAddress = InetAddress.getByName("192.168.1.23");
         } catch (UnknownHostException e) {
             e.printStackTrace();
             return null;
@@ -30,9 +30,9 @@ public class CustomConfig implements Config {
 
     @Override
     public InetAddress getPublicInetAddress() { return publicIpAddress; }
-    @Override public String getUserPart() { return "alice"; }
-    @Override public String getDomain() { return "atlanta.com"; }
-    @Override public String getPassword() { return "secret1234"; }
+    @Override public String getUserPart() { return "sysanonymous"; }
+    @Override public String getDomain() { return "192.168.1.23"; }
+    @Override public String getPassword() { return "77747297190"; }
     @Override
     public MediaMode getMediaMode() { return MediaMode.captureAndPlayback; }
 
@@ -44,7 +44,7 @@ public class CustomConfig implements Config {
     }
     
     @Override public SipURI getOutboundProxy() { return null; }
-    @Override public int getSipPort() { return 0; }
+    @Override public int getSipPort() { return 5060; }
     @Override public boolean isMediaDebug() { return false; }
     @Override public String getMediaFile() { return null; }
     @Override public int getRtpPort() { return 0; }
