@@ -31,5 +31,18 @@
 			<artifactId>peers-javaxsound</artifactId>
 			<version>${project.version}</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-io -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>1.3.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.cloud/google-cloud-texttospeech -->
+		<dependency>
+			<groupId>com.google.cloud</groupId>
+			<artifactId>google-cloud-texttospeech</artifactId>
+			<version>0.54.0-beta</version>
+		</dependency>
+
 	</dependencies>
 </project>
